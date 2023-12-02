@@ -1,3 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701537232
-node_3d.tscn::PackedScene::7743402639524755136::1701537114::0::1::::<><>::
+::res://::1701551424
+node_3d.tscn::PackedScene::7743402639524755136::1701537302::0::1::::<><>::
+main_gui.tscn::PackedScene::1450297638813776922::1701551539::0::1::::<><>::res://Zen Fishing.gd
+rectangular-png-512x512-pixel-512.png::CompressedTexture2D::2013247025839235035::1701548293::1701548294::1::::<><>::
+Zen Fishing.gd::GDScript::-1::1701551511::0::1::::<>Button<>::
