@@ -1,5 +1,80 @@
-[gd_scene format=3 uid="uid://uwsgp5oac0ks"]
+[gd_scene load_steps=5 format=3 uid="uid://uwsgp5oac0ks"]
 
-[node name="main_gui" type="MarginContainer"]
-offset_right = 40.0
-offset_bottom = 40.0
+[ext_resource type="Script" path="res://LoadingButton.gd" id="1_4qkqc"]
+
+[sub_resource type="Gradient" id="Gradient_p5a1l"]
+offsets = PackedFloat32Array(0.155844, 0.448052, 1)
+colors = PackedColorArray(0.260017, 0.479397, 1, 1, 0.311247, 0.515439, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tslbg"]
+gradient = SubResource("Gradient_p5a1l")
+fill_from = Vector2(1, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nw2wv"]
+font_size = 58
+font_color = Color(0, 0, 0, 1)
+outline_size = 5
+
+[node name="main_gui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="Background"]
+layout_mode = 2
+texture = SubResource("GradientTexture2D_tslbg")
+
+[node name="Title Text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 79.0
+grow_horizontal = 2
+size_flags_vertical = 1
+text = "Stress reliver"
+label_settings = SubResource("LabelSettings_nw2wv")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.131
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.111992
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Zen Fishing" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Zen Fishing"
+script = ExtResource("1_4qkqc")
+
+[node name="Newtons Cradle" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Newtons Cradle"
+script = ExtResource("1_4qkqc")
+
+[node name="Box" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Relaxing Box Bouncing Sim"
+script = ExtResource("1_4qkqc")
+
+[node name="Calming Pet Sim" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Calming Pet SIm
+"
+script = ExtResource("1_4qkqc")
