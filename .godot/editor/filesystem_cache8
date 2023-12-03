@@ -1,3 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701537232
-node_3d.tscn::PackedScene::7743402639524755136::1701537114::0::1::::<><>::
+::res://::1701565835
+26aa.webp::CompressedTexture2D::4985585950345864423::1701565834::1701565835::1::::<><>::
+43694.png::CompressedTexture2D::5317266364868800497::1701554774::1701554775::1::::<><>::
+node_3d.tscn::PackedScene::7743402639524755136::1701553791::0::1::::<><>::
+newtonscradele.tscn::PackedScene::8304223746041171015::1701564443::0::1::::<><>::uid://v6if2dcbnjn6::::res://rope.tscn
+Cicle.tscn::PackedScene::4299956588086028263::1701565909::0::1::::<><>::uid://cdbb4wi55fh5h::::res://26aa.webp
+rope.tscn::PackedScene::1538457514543785461::1701564443::0::1::::<><>::uid://ch0yun173ooeb::::res://43694.png<>uid://40mujvsnj4qy::::res://ropeSegment.tscn
+ropeSegment.tscn::PackedScene::2087850735132370884::1701564444::0::1::::<><>::uid://ch0yun173ooeb::::res://43694.png
+RopeBody.tscn::PackedScene::4754960607732154026::1701552499::0::1::::<><>::

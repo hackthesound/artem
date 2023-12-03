@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://b80lrhrrntylm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2jwk3"]
+size = Vector3(1000, 100, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nyufs"]
+top_radius = 50.0
+bottom_radius = 50.0
+height = 700.0
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1249, 1031)
+
+[node name="Top" type="MeshInstance2D" parent="."]
+position = Vector2(-661, -1113)
+mesh = SubResource("BoxMesh_2jwk3")
+
+[node name="Bottom Box" type="MeshInstance2D" parent="."]
+position = Vector2(-661, -416)
+mesh = SubResource("BoxMesh_2jwk3")
+
+[node name="Left Cylinder" type="MeshInstance2D" parent="."]
+position = Vector2(-1045, -739)
+mesh = SubResource("CylinderMesh_nyufs")
+
+[node name="Right Cylinder" type="MeshInstance2D" parent="."]
+position = Vector2(-265, -739)
+mesh = SubResource("CylinderMesh_nyufs")
+
+[node name="rope" type="RigidBody2D" parent="."]
+scale = Vector2(-1.02474, 144.984)

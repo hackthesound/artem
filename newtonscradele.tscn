@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqkvl7yr2sa4n"]
+
+[ext_resource type="PackedScene" uid="uid://v6if2dcbnjn6" path="res://rope.tscn" id="1_pshvr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_clp4h"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2rp3q"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(524, 333)
+scale = Vector2(7.30874, 5.97198)
+
+[node name="top Box" type="MeshInstance2D" parent="."]
+position = Vector2(35.375, -17.25)
+scale = Vector2(73.25, 4.5)
+mesh = SubResource("BoxMesh_clp4h")
+
+[node name="Bottom Box" type="MeshInstance2D" parent="."]
+position = Vector2(36, 19)
+scale = Vector2(73.25, 4.5)
+mesh = SubResource("BoxMesh_clp4h")
+
+[node name="left cylinder" type="MeshInstance2D" parent="."]
+position = Vector2(6, 1.5)
+scale = Vector2(6, 16.5)
+mesh = SubResource("CylinderMesh_2rp3q")
+
+[node name="Right cylinder" type="MeshInstance2D" parent="."]
+position = Vector2(63, 1)
+scale = Vector2(6, 16.5)
+mesh = SubResource("CylinderMesh_2rp3q")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 1)
+
+[node name="Rope" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(23.123, -16.5774)
+
+[node name="Rope2" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(31.8796, -16.5774)
+
+[node name="Rope3" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(40.9099, -16.5774)
+
+[node name="Rope4" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(49.9402, -16.5774)
+
+[node name="Rope5" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(14.0927, -16.5774)

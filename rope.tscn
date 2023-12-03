@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://v6if2dcbnjn6"]
+
+[ext_resource type="Texture2D" uid="uid://ch0yun173ooeb" path="res://43694.png" id="1_0t6ot"]
+[ext_resource type="PackedScene" uid="uid://40mujvsnj4qy" path="res://ropeSegment.tscn" id="2_57tmm"]
+[ext_resource type="PackedScene" uid="uid://b2i6wlh4c3um6" path="res://Circle.tscn" id="3_qsjwr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxquo"]
+size = Vector2(18.8153, 12.1001)
+
+[node name="Rope" type="Node2D"]
+
+[node name="RopeHolder" type="StaticBody2D" parent="."]
+scale = Vector2(1, 0.996774)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RopeHolder"]
+scale = Vector2(0.754814, 0.857714)
+shape = SubResource("RectangleShape2D_rxquo")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="43694" type="Sprite2D" parent="RopeHolder/CollisionShape2D"]
+position = Vector2(-2.38419e-07, 0)
+scale = Vector2(0.164827, -0.0281212)
+texture = ExtResource("1_0t6ot")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(0.3, 0.3)
+node_a = NodePath("../RopeHolder")
+node_b = NodePath("../Ropesegment2")
+
+[node name="Ropesegment2" parent="." instance=ExtResource("2_57tmm")]
+position = Vector2(0, 3)
+
+[node name="PinJoint2D2" type="PinJoint2D" parent="."]
+position = Vector2(0, 6)
+scale = Vector2(0.3, 0.3)
+node_a = NodePath("../Ropesegment2")
+node_b = NodePath("../Ropesegment3")
+
+[node name="Ropesegment3" parent="." instance=ExtResource("2_57tmm")]
+position = Vector2(0, 16)
+
+[node name="PinJoint2D3" type="PinJoint2D" parent="."]
+position = Vector2(0, 13)
+scale = Vector2(0.3, 0.3)
+node_a = NodePath("../Ropesegment3")
+node_b = NodePath("../Ropesegment")
+
+[node name="Ropesegment" parent="." instance=ExtResource("2_57tmm")]
+position = Vector2(0, 10)
+
+[node name="PinJoint2D4" type="PinJoint2D" parent="."]
+position = Vector2(0, 19)
+scale = Vector2(0.3, 0.3)
+node_a = NodePath("../Ropesegment")
+node_b = NodePath("../Ropesegment4")
+
+[node name="Ropesegment4" parent="." instance=ExtResource("2_57tmm")]
+position = Vector2(0, 23)
+
+[node name="Node2D" parent="." instance=ExtResource("3_qsjwr")]
+position = Vector2(0, 24)
