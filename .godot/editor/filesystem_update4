@@ -8,3 +8,7 @@ res://rope.tscn
 res://newtonscradele.tscn
 res://Circle.gd
 res://draggableball.tscn
+res://Character.tscn
+res://node_2d.tscn
+res://CharacterBody2D.gd
+res://fishCurser.gd

@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://dik7ye6v6ljhg"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_6tjih"]
+[ext_resource type="Texture2D" uid="uid://hgvreptaatk5" path="res://sprites/frontChar.png" id="2_cjkb2"]
+[ext_resource type="Texture2D" uid="uid://cujsatfwmg5e3" path="res://sprites/backChar.png" id="3_vttkw"]
+[ext_resource type="Texture2D" uid="uid://cab108a7ri1c2" path="res://sprites/leftChar.png" id="4_c7ktx"]
+[ext_resource type="Texture2D" uid="uid://by555mf2f51f1" path="res://sprites/rightChar.png" id="5_0hbsn"]
+[ext_resource type="Texture2D" uid="uid://bjc7w8t2b45ie" path="res://sprites/fishingPole.png" id="6_tk2h6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nd4o1"]
+size = Vector2(71, 49)
+
+[node name="Character" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+disable_mode = 2
+script = ExtResource("1_6tjih")
+
+[node name="frontSprite" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_cjkb2")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0.5, 37.5)
+shape = SubResource("RectangleShape2D_nd4o1")
+
+[node name="backSprite" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("3_vttkw")
+
+[node name="leftSprite" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("4_c7ktx")
+
+[node name="rightSprite" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("5_0hbsn")
+
+[node name="fishingRod" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(68, -42)
+texture = ExtResource("6_tk2h6")
