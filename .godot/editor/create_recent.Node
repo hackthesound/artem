@@ -12,3 +12,4 @@ RigidBody3D
 DirectionalLight3D
 WorldEnvironment
 CSGBox3D
+MeshInstance3D

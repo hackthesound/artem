@@ -2,3 +2,9 @@ res://draggableball.tscn
 res://LoadingButton.gd
 res://world_border.gd
 res://ballgame.tscn
+res://ropeSegment.tscn
+res://Circle.tscn
+res://rope.tscn
+res://newtonscradele.tscn
+res://Circle.gd
+res://draggableball.tscn

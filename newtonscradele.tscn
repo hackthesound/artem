@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqkvl7yr2sa4n"]
+
+[ext_resource type="Texture2D" uid="uid://ch0yun173ooeb" path="res://43694.png" id="1_2csfr"]
+[ext_resource type="PackedScene" uid="uid://v6if2dcbnjn6" path="res://rope.tscn" id="1_pshvr"]
+[ext_resource type="Texture2D" uid="uid://ctd2cg1jj0hbp" path="res://20231202_174427.jpg" id="2_eehtb"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2rp3q"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_clp4h"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(321, 310)
+scale = Vector2(7.30874, 5.97198)
+
+[node name="43694" type="Sprite2D" parent="."]
+position = Vector2(-7.11477, -14.2331)
+scale = Vector2(4.30288, 2.47353)
+texture = ExtResource("1_2csfr")
+
+[node name="20231202174427" type="Sprite2D" parent="43694"]
+position = Vector2(-0.953938, -0.541571)
+scale = Vector2(0.000769084, 0.00311703)
+texture = ExtResource("2_eehtb")
+
+[node name="Rope" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(23.123, -16.5774)
+
+[node name="Rope2" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(31.8796, -16.5774)
+
+[node name="Rope3" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(40.9099, -16.5774)
+
+[node name="Rope4" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(49.9402, -16.5774)
+
+[node name="Rope5" parent="." instance=ExtResource("1_pshvr")]
+position = Vector2(15.1873, -19.424)
+rotation = 2.20881
+
+[node name="Right cylinder" type="MeshInstance2D" parent="."]
+position = Vector2(63, 1)
+scale = Vector2(6, 16.5)
+mesh = SubResource("CylinderMesh_2rp3q")
+
+[node name="Bottom Box" type="MeshInstance2D" parent="."]
+position = Vector2(36, 19)
+scale = Vector2(73.25, 4.5)
+mesh = SubResource("BoxMesh_clp4h")
+
+[node name="top Box" type="MeshInstance2D" parent="."]
+position = Vector2(35.375, -17.25)
+scale = Vector2(73.25, 4.5)
+mesh = SubResource("BoxMesh_clp4h")
+
+[node name="left cylinder" type="MeshInstance2D" parent="."]
+position = Vector2(6, 1.5)
+scale = Vector2(6, 16.5)
+mesh = SubResource("CylinderMesh_2rp3q")
