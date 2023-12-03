@@ -1,6 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701551424
-node_3d.tscn::PackedScene::7743402639524755136::1701537302::0::1::::<><>::
-main_gui.tscn::PackedScene::1450297638813776922::1701551539::0::1::::<><>::res://Zen Fishing.gd
-rectangular-png-512x512-pixel-512.png::CompressedTexture2D::2013247025839235035::1701548293::1701548294::1::::<><>::
-Zen Fishing.gd::GDScript::-1::1701551511::0::1::::<>Button<>::
+::res://::1701637484
+Area2D.gd::GDScript::-1::1701630414::0::1::::<>Area2D<>::
+Button.gd::GDScript::-1::1701634064::0::1::::<>Button<>::
+button.tscn::PackedScene::1610096895040338880::1701637418::0::1::::<><>::uid://b6mv22r441hlc::::res://wood.jpg<>uid://bjwpv5md2l68u::::res://redball.png<>res://Button.gd<>uid://drntgaylfeqa3::::res://yikers.mp3<>uid://bu7gj6qgdy8rv::::res://music1.mp3<>uid://buud04xar0km6::::res://nope.mp3<>uid://dk2wcrk25030n::::res://ok.mp3
+CharacterBody2D.gd::GDScript::-1::1701629000::0::1::::<>CharacterBody2D<>::
+export_presets.cfg::TextFile::-1::1701560321::0::1::::<><>::
+LoadingButton.gd::GDScript::-1::1701627950::0::1::::<>Button<>::
+main_gui.tscn::PackedScene::1450297638813776922::1701627950::0::1::::<><>::res://LoadingButton.gd
+music1.mp3::AudioStreamMP3::3856639671903733131::1701633248::1701637320::1::::<><>::
+node_3d.tscn::PackedScene::7743402639524755136::1701627950::0::1::::<><>::
+nope.mp3::AudioStreamMP3::3831713466092234103::1701633421::1701637419::1::::<><>::
+ok.mp3::AudioStreamMP3::7918228941860771927::1701633780::1701637277::1::::<><>::
+rectangular-png-512x512-pixel-512.png::CompressedTexture2D::2013247025839235035::1701627950::1701627950::1::::<><>::
+redball.png::CompressedTexture2D::3064486437999221338::1701628366::1701628366::1::::<><>::
+Sprite2D.gd::GDScript::-1::1701629000::0::1::::<>Sprite2D<>::
+wood.jpg::CompressedTexture2D::4588372088553890580::1701634435::1701634435::1::::<><>::
+yikers.mp3::AudioStreamMP3::8380473678936576044::1701633155::1701637378::1::::<><>::
