@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3u1al7movd5k"
+path="res://.godot/imported/Sonic Ring - Sound Effect (HD).mp3-0391cd950e265f58399b5d08db85a4ba.mp3str"
+
+[deps]
+
+source_file="res://Sonic Ring - Sound Effect (HD).mp3"
+dest_files=["res://.godot/imported/Sonic Ring - Sound Effect (HD).mp3-0391cd950e265f58399b5d08db85a4ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

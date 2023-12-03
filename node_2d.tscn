@@ -1,0 +1,77 @@
+[gd_scene load_steps=12 format=3 uid="uid://cyjrwho7582qy"]
+
+[ext_resource type="Texture2D" uid="uid://m3ovk32clskq" path="res://brown.jpg" id="1_l8mrc"]
+[ext_resource type="Texture2D" uid="uid://csr4pow2x7fi0" path="res://block.jpg" id="2_3x172"]
+[ext_resource type="Script" path="res://RigidBody2D.gd" id="3_0aqxh"]
+[ext_resource type="AudioStream" uid="uid://c3u1al7movd5k" path="res://Sonic Ring - Sound Effect (HD).mp3" id="4_7jm43"]
+[ext_resource type="Script" path="res://AudioStreamPlayer2D.gd" id="5_ftlmt"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_lcqld"]
+a = Vector2(2, 1767)
+b = Vector2(0, 0)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_0m3er"]
+b = Vector2(3442, 3)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_fsuhh"]
+a = Vector2(1154, -1101)
+b = Vector2(1152, 648)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_w07to"]
+a = Vector2(0, 648)
+b = Vector2(3442, 651)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bgq7u"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnxuu"]
+size = Vector2(224, 225)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Brown" type="Sprite2D" parent="."]
+position = Vector2(967, 476)
+scale = Vector2(2.6511, 2.2953)
+texture = ExtResource("1_l8mrc")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("SegmentShape2D_lcqld")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("SegmentShape2D_0m3er")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(777, 1101)
+shape = SubResource("SegmentShape2D_fsuhh")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3, 340)
+shape = SubResource("SegmentShape2D_w07to")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(630, 298)
+physics_material_override = SubResource("PhysicsMaterial_bgq7u")
+gravity_scale = 0.0
+lock_rotation = true
+max_contacts_reported = 2
+contact_monitor = true
+script = ExtResource("3_0aqxh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_dnxuu")
+
+[node name="Block" type="Sprite2D" parent="RigidBody2D"]
+scale = Vector2(0.993333, 1.00444)
+texture = ExtResource("2_3x172")
+
+[node name="ding" type="AudioStreamPlayer2D" parent="RigidBody2D"]
+position = Vector2(-630, -298)
+stream = ExtResource("4_7jm43")
+volume_db = -15.402
+pitch_scale = 1.25
+script = ExtResource("5_ftlmt")
+
+[connection signal="body_entered" from="RigidBody2D" to="RigidBody2D" method="_on_body_entered"]

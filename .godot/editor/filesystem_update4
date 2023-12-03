@@ -1,1 +1,5 @@
-res://node_3d.tscn
+res://node_2d.tscn
+res://Block.gd
+res://RigidBody2D.gd
+res://CharacterBody2D.gd
+res://AudioStreamPlayer2D.gd

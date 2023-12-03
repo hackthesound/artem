@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyjrwho7582qy"]
+
+[ext_resource type="Texture2D" uid="uid://m3ovk32clskq" path="res://brown.jpg" id="1_l8mrc"]
+[ext_resource type="Texture2D" uid="uid://csr4pow2x7fi0" path="res://block.jpg" id="2_3x172"]
+[ext_resource type="Script" path="res://Block.gd" id="3_6562u"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Brown" type="Sprite2D" parent="."]
+position = Vector2(576.499, 327.25)
+scale = Vector2(1.58379, 1.44407)
+texture = ExtResource("1_l8mrc")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(498, 396)
+script = ExtResource("3_6562u")
+
+[node name="Block" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_3x172")

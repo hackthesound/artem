@@ -1,3 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701537232
-node_3d.tscn::PackedScene::7743402639524755136::1701537114::0::1::::<><>::
+::res://::1701563345
+Block.gd::GDScript::-1::1701547691::0::1::::<>CharacterBody2D<>::
+block.jpg::CompressedTexture2D::6073123324959957261::1701546057::1701546057::1::::<><>::
+Brown.gd::GDScript::-1::1701545841::0::1::::<>Sprite2D<>::
+brown.jpg::CompressedTexture2D::900956810058703364::1701544719::1701544719::1::::<><>::
+export_presets.cfg::TextFile::-1::1701560321::0::1::::<><>::
+node_2d.tscn::PackedScene::6477024881614520204::1701561453::0::1::::<><>::uid://m3ovk32clskq::::res://brown.jpg<>uid://csr4pow2x7fi0::::res://block.jpg<>res://RigidBody2D.gd
+node_3d.tscn::PackedScene::3517610898709593712::1701545695::0::1::::<><>::uid://m3ovk32clskq::::res://brown.jpg<>res://Sprite2D.gd
+CollisionShape2D.gd::GDScript::-1::1701548887::0::1::::<>CollisionShape2D<>::
+CharacterBody2D.gd::GDScript::-1::1701553406::0::1::::<>CharacterBody2D<>::
+AudioStreamPlayer2D.gd::GDScript::-1::1701561638::0::1::::<>AudioStreamPlayer2D<>::
+RigidBody2D.gd::GDScript::-1::1701558657::0::1::::<>RigidBody2D<>::
+Sonic Ring - Sound Effect (HD).mp3::AudioStreamMP3::6780995813899589018::1701563345::1701563346::1::::<><>::
+Sprite2D.gd::GDScript::-1::1701545695::0::1::::<>RefCounted<>::
