@@ -1,6 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://vc5lk1fa3br5"]
+[gd_scene load_steps=8 format=3 uid="uid://cpq0xljvbu34e"]
 
-[ext_resource type="PackedScene" uid="uid://dik7ye6v6ljhg" path="res://Character.tscn" id="1_jih8u"]
+[ext_resource type="PackedScene" uid="uid://dik7ye6v6ljhg" path="res://node_3d.tscn" id="1_jih8u"]
 [ext_resource type="Texture2D" uid="uid://dbfpdkafcsey7" path="res://sprites/Tilemap 64x64.png" id="1_v5xoc"]
 [ext_resource type="Texture2D" uid="uid://brfnobm1j43rv" path="res://sprites/fishCurser.png" id="3_5joic"]
 [ext_resource type="Script" path="res://fishCurser.gd" id="4_7n43n"]

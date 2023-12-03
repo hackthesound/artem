@@ -62,16 +62,13 @@ alignment = 1
 layout_mode = 2
 text = "Zen Fishing"
 script = ExtResource("1_4qkqc")
+sceneToLoad = "node_2d.tscn"
 
 [node name="Newtons Cradle" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Newtons Cradle"
 script = ExtResource("1_4qkqc")
-
-[node name="Box" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "Relaxing Box Bouncing Sim"
-script = ExtResource("1_4qkqc")
+sceneToLoad = "newtonscradele.tscn"
 
 [node name="Calming Pet Sim" type="Button" parent="VBoxContainer"]
 layout_mode = 2

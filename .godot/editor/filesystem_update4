@@ -2,13 +2,7 @@ res://draggableball.tscn
 res://LoadingButton.gd
 res://world_border.gd
 res://ballgame.tscn
-res://ropeSegment.tscn
-res://Circle.tscn
-res://rope.tscn
-res://newtonscradele.tscn
-res://Circle.gd
-res://draggableball.tscn
-res://Character.tscn
+res://main_gui.tscn
+res://dragging_project.tscn
+res://world_border.tscn
 res://node_2d.tscn
-res://CharacterBody2D.gd
-res://fishCurser.gd
