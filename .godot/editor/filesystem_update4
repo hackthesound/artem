@@ -3,3 +3,4 @@ res://Block.gd
 res://RigidBody2D.gd
 res://CharacterBody2D.gd
 res://AudioStreamPlayer2D.gd
+res://TouchScreenButton.gd

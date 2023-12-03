@@ -4,6 +4,8 @@ var speed = 400  # move speed in pixels/sec
 var target = null
 
 func _input(event):
+	if event is InputEventScreenTouch and event.is_pressed():
+		print("hello!!")
 	if event.is_action_pressed("click"):
 		target = get_global_mouse_position()
 

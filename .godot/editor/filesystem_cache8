@@ -1,15 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701563345
-Block.gd::GDScript::-1::1701547691::0::1::::<>CharacterBody2D<>::
+::res://::1701588153
+Block.gd::GDScript::-1::1701586007::0::1::::<>CharacterBody2D<>::
 block.jpg::CompressedTexture2D::6073123324959957261::1701546057::1701546057::1::::<><>::
 Brown.gd::GDScript::-1::1701545841::0::1::::<>Sprite2D<>::
 brown.jpg::CompressedTexture2D::900956810058703364::1701544719::1701544719::1::::<><>::
 export_presets.cfg::TextFile::-1::1701560321::0::1::::<><>::
-node_2d.tscn::PackedScene::6477024881614520204::1701561453::0::1::::<><>::uid://m3ovk32clskq::::res://brown.jpg<>uid://csr4pow2x7fi0::::res://block.jpg<>res://RigidBody2D.gd
+nanana.png::CompressedTexture2D::1121360954913995349::1701588014::1701588014::1::::<><>::
+node_2d.tscn::PackedScene::6477024881614520204::1701588060::0::1::::<><>::uid://m3ovk32clskq::::res://brown.jpg<>res://RigidBody2D.gd<>uid://p8gwewvc3ns4::::res://nanana.png<>uid://c3u1al7movd5k::::res://Sonic Ring - Sound Effect (HD).mp3<>res://AudioStreamPlayer2D.gd
 node_3d.tscn::PackedScene::3517610898709593712::1701545695::0::1::::<><>::uid://m3ovk32clskq::::res://brown.jpg<>res://Sprite2D.gd
 CollisionShape2D.gd::GDScript::-1::1701548887::0::1::::<>CollisionShape2D<>::
-CharacterBody2D.gd::GDScript::-1::1701553406::0::1::::<>CharacterBody2D<>::
-AudioStreamPlayer2D.gd::GDScript::-1::1701561638::0::1::::<>AudioStreamPlayer2D<>::
-RigidBody2D.gd::GDScript::-1::1701558657::0::1::::<>RigidBody2D<>::
-Sonic Ring - Sound Effect (HD).mp3::AudioStreamMP3::6780995813899589018::1701563345::1701563346::1::::<><>::
+CharacterBody2D.gd::GDScript::-1::1701583740::0::1::::<>RigidBody2D<>::
+AudioStreamPlayer2D.gd::GDScript::-1::1701564150::0::1::::<>AudioStreamPlayer2D<>::
+Block2.gd::GDScript::-1::1701586242::0::1::::<>CharacterBody2D<>::
+TouchScreenButton.gd::GDScript::-1::1701585546::0::1::::<>TouchScreenButton<>::
+RigidBody2D.gd::GDScript::-1::1701586782::0::1::::<>RigidBody2D<>::
+Sonic Ring - Sound Effect (HD).mp3::AudioStreamMP3::6780995813899589018::1701563309::1701563346::1::::<><>::
 Sprite2D.gd::GDScript::-1::1701545695::0::1::::<>RefCounted<>::
+yahh.jpg::CompressedTexture2D::526864681156734512::1701588153::1701588154::1::::<><>::

@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://cyjrwho7582qy"]
 
-[ext_resource type="Texture2D" uid="uid://m3ovk32clskq" path="res://brown.jpg" id="1_l8mrc"]
-[ext_resource type="Texture2D" uid="uid://csr4pow2x7fi0" path="res://block.jpg" id="2_3x172"]
+[ext_resource type="Texture2D" uid="uid://hrhncjolp7pk" path="res://yahh.jpg" id="1_n7kqq"]
 [ext_resource type="Script" path="res://RigidBody2D.gd" id="3_0aqxh"]
+[ext_resource type="Texture2D" uid="uid://p8gwewvc3ns4" path="res://nanana.png" id="3_qmkfr"]
 [ext_resource type="AudioStream" uid="uid://c3u1al7movd5k" path="res://Sonic Ring - Sound Effect (HD).mp3" id="4_7jm43"]
 [ext_resource type="Script" path="res://AudioStreamPlayer2D.gd" id="5_ftlmt"]
 
@@ -25,15 +25,15 @@ b = Vector2(3442, 651)
 friction = 0.0
 bounce = 1.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnxuu"]
-size = Vector2(224, 225)
+[sub_resource type="CircleShape2D" id="CircleShape2D_eo5fo"]
+radius = 111.041
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Brown" type="Sprite2D" parent="."]
-position = Vector2(967, 476)
-scale = Vector2(2.6511, 2.2953)
-texture = ExtResource("1_l8mrc")
+position = Vector2(964.5, 490.5)
+scale = Vector2(3.14869, 2.52699)
+texture = ExtResource("1_n7kqq")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -53,19 +53,22 @@ shape = SubResource("SegmentShape2D_w07to")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2(630, 298)
+rotation = 2.61799
+input_pickable = true
 physics_material_override = SubResource("PhysicsMaterial_bgq7u")
 gravity_scale = 0.0
-lock_rotation = true
 max_contacts_reported = 2
 contact_monitor = true
 script = ExtResource("3_0aqxh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-shape = SubResource("RectangleShape2D_dnxuu")
+shape = SubResource("CircleShape2D_eo5fo")
 
 [node name="Block" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(3, 1)
+rotation = 0.0174533
 scale = Vector2(0.993333, 1.00444)
-texture = ExtResource("2_3x172")
+texture = ExtResource("3_qmkfr")
 
 [node name="ding" type="AudioStreamPlayer2D" parent="RigidBody2D"]
 position = Vector2(-630, -298)
@@ -74,4 +77,60 @@ volume_db = -15.402
 pitch_scale = 1.25
 script = ExtResource("5_ftlmt")
 
+[node name="RigidBody2D2" type="RigidBody2D" parent="."]
+position = Vector2(630, 298)
+rotation = -1.74533
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_bgq7u")
+gravity_scale = 0.0
+max_contacts_reported = 2
+contact_monitor = true
+script = ExtResource("3_0aqxh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2"]
+position = Vector2(-130.874, 736.463)
+shape = SubResource("CircleShape2D_eo5fo")
+
+[node name="Block" type="Sprite2D" parent="RigidBody2D2"]
+position = Vector2(-126.818, 742.255)
+rotation = 0.0174533
+scale = Vector2(0.993333, 1.00444)
+texture = ExtResource("3_qmkfr")
+
+[node name="ding" type="AudioStreamPlayer2D" parent="RigidBody2D2"]
+position = Vector2(-630, -298)
+stream = ExtResource("4_7jm43")
+volume_db = -15.402
+pitch_scale = 1.25
+script = ExtResource("5_ftlmt")
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="."]
+position = Vector2(630, 298)
+rotation = -0.872665
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_bgq7u")
+gravity_scale = 0.0
+max_contacts_reported = 2
+contact_monitor = true
+script = ExtResource("3_0aqxh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D3"]
+position = Vector2(67.7079, 496.666)
+shape = SubResource("CircleShape2D_eo5fo")
+
+[node name="Block" type="Sprite2D" parent="RigidBody2D3"]
+position = Vector2(68.4979, 502.697)
+rotation = 0.0174533
+scale = Vector2(0.993333, 1.00444)
+texture = ExtResource("3_qmkfr")
+
+[node name="ding" type="AudioStreamPlayer2D" parent="RigidBody2D3"]
+position = Vector2(-630, -298)
+stream = ExtResource("4_7jm43")
+volume_db = -15.402
+pitch_scale = 1.25
+script = ExtResource("5_ftlmt")
+
 [connection signal="body_entered" from="RigidBody2D" to="RigidBody2D" method="_on_body_entered"]
+[connection signal="body_entered" from="RigidBody2D2" to="RigidBody2D2" method="_on_body_entered"]
+[connection signal="body_entered" from="RigidBody2D3" to="RigidBody2D3" method="_on_body_entered"]
