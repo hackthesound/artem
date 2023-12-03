@@ -43,7 +43,7 @@ anchor_right = 1.0
 offset_bottom = 79.0
 grow_horizontal = 2
 size_flags_vertical = 1
-text = "Stress reliver"
+text = "stress killer lol"
 label_settings = SubResource("LabelSettings_nw2wv")
 horizontal_alignment = 1
 
@@ -75,6 +75,6 @@ script = ExtResource("1_4qkqc")
 
 [node name="Calming Pet Sim" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "Calming Pet SIm
-"
+text = "Calming Ball Game"
 script = ExtResource("1_4qkqc")
+sceneToLoad = "ballgame.tscn"

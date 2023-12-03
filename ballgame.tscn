@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw4aelhovtok2"]
+
+[ext_resource type="Texture2D" uid="uid://blhixfnyet0pm" path="res://pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg" id="1_amko0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3mch5"]
+
+[sub_resource type="Environment" id="Environment_5cjng"]
+background_mode = 3
+background_canvas_max_layer = 20
+
+[node name="Ball Game" type="Node"]
+
+[node name="Game" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Game"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.9882)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Game"]
+transform = Transform3D(0.5033, -0.713935, 0.486812, 0.513164, 0.700212, 0.496353, -0.695236, 0, 0.718782, 2.99424, 2.23445, 3.27976)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Game"]
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+gravity_scale = 0.0
+freeze_mode = 1
+constant_torque = Vector3(10, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Game/RigidBody3D"]
+shape = SubResource("BoxShape3D_3mch5")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Game/RigidBody3D/CollisionShape3D"]
+
+[node name="Gui" type="Control" parent="."]
+visibility_layer = 524288
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Gui"]
+visibility_layer = 524288
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_amko0")
+expand_mode = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5cjng")
