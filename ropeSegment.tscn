@@ -3,15 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://ch0yun173ooeb" path="res://43694.png" id="1_ydcsl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_scsot"]
-size = Vector2(7.62939e-06, 7)
+size = Vector2(2.02186, 22)
 
 [node name="Ropesegment" type="RigidBody2D"]
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.989189, 1)
 shape = SubResource("RectangleShape2D_scsot")
 
-[node name="43694" type="Sprite2D" parent="."]
+[node name="Sprite" type="Sprite2D" parent="."]
 rotation = -3.14159
-scale = Vector2(0.0257002, 0.0983645)
+scale = Vector2(0.0257002, 0.293851)
 texture = ExtResource("1_ydcsl")
