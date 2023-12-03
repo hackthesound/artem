@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://vc5lk1fa3br5"]
+[gd_scene load_steps=7 format=3 uid="uid://vc5lk1fa3br5"]
 
 [ext_resource type="PackedScene" uid="uid://dik7ye6v6ljhg" path="res://Character.tscn" id="1_jih8u"]
 [ext_resource type="Texture2D" uid="uid://dbfpdkafcsey7" path="res://sprites/Tilemap 64x64.png" id="1_v5xoc"]
@@ -135,8 +135,6 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/6 = SubResource("TileSetAtlasSource_4yugn")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yckas"]
-
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -152,29 +150,9 @@ points = PackedVector2Array(0, -64, 0, 192)
 default_color = Color(0.992157, 0.592157, 0, 0.694118)
 round_precision = 2
 
-[node name="fishCurser" type="CharacterBody2D" parent="."]
-light_mask = 2
-visibility_layer = 2
-collision_layer = 2
-collision_mask = 2
-script = ExtResource("4_7n43n")
-
-[node name="fishCurserSprite" type="Sprite2D" parent="fishCurser"]
-position = Vector2(1620, 58)
-texture = ExtResource("3_5joic")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="fishCurser"]
-position = Vector2(1618, 52)
-shape = SubResource("RectangleShape2D_yckas")
-one_way_collision_margin = 0.0
-
 [node name="Character" parent="." instance=ExtResource("1_jih8u")]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_layer = 2
-collision_mask = 2
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(-13.7281, 0)
-scale = Vector2(1.01073, 1)
-polygon = PackedVector2Array(1299.78, -70, 1279, -88, 1764.79, -86, 1768.74, 205, 1280.98, 205, 1279.99, 188, 1277.02, -94, 1297.8, -92, 1299.78, 189, 1742.03, 189, 1742.03, -67)
+[node name="fishCurserSprite" type="Sprite2D" parent="."]
+position = Vector2(1620, 58)
+texture = ExtResource("3_5joic")
+script = ExtResource("4_7n43n")

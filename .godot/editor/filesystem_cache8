@@ -1,10 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701555229
-Character.tscn::PackedScene::7743402639524755136::1701554148::0::1::::<><>::res://CharacterBody2D.gd<>uid://bc6mjdw1tus1h::::res://sprites/New Piskel.png
-CharacterBody2D.gd::GDScript::-1::1701552331::0::1::::<>CharacterBody2D<>::
-node_2d.tscn::PackedScene::1479936191049443044::1701554148::0::1::::<><>::uid://dik7ye6v6ljhg::::res://Character.tscn<>uid://b2jwyixt07bal::::res://sprites/Tilemap 32x32.png
-::res://sprites/::1701555229
+::res://::1701632513
+Character.tscn::PackedScene::7743402639524755136::1701632470::0::1::::<><>::res://CharacterBody2D.gd<>uid://hgvreptaatk5::::res://sprites/frontChar.png<>uid://cujsatfwmg5e3::::res://sprites/backChar.png<>uid://cab108a7ri1c2::::res://sprites/leftChar.png<>uid://by555mf2f51f1::::res://sprites/rightChar.png<>uid://bjc7w8t2b45ie::::res://sprites/fishingPole.png
+CharacterBody2D.gd::GDScript::-1::1701632073::0::1::::<>CharacterBody2D<>::
+node_2d.tscn::PackedScene::1479936191049443044::1701632513::0::1::::<><>::uid://dik7ye6v6ljhg::::res://Character.tscn<>uid://dbfpdkafcsey7::::res://sprites/Tilemap 64x64.png
+::res://sprites/::1701632652
+backChar.png::CompressedTexture2D::6196291552486744972::1701629495::1701629507::1::::<><>::
+fishCurser.png::CompressedTexture2D::3590767308586107007::1701632652::1701632652::1::::<><>::
+fishingPole.png::CompressedTexture2D::3024233027029052836::1701631723::1701631668::1::::<><>::
+frontChar.png::CompressedTexture2D::505013821463826526::1701629495::1701629507::1::::<><>::
 Grass1.png::CompressedTexture2D::7370889903354219908::1701547171::1701547440::1::::<><>::
+leftChar.png::CompressedTexture2D::4776530766547362967::1701629495::1701629507::1::::<><>::
 New Piskel (1).png::CompressedTexture2D::5146839645416249298::1701545791::1701545791::1::::<><>::
 New Piskel.png::CompressedTexture2D::2591538950166627283::1701545152::1701545153::1::::<><>::
+rightChar.png::CompressedTexture2D::4134759986466683660::1701629495::1701629507::1::::<><>::
 Tilemap 64x64.png::CompressedTexture2D::7240689421224910256::1701555227::1701555229::1::::<><>::
