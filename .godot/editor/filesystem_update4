@@ -1,6 +1,3 @@
-res://main_gui.tscn
-res://Zen Fishing.gd
-res://pet_sim.tscn
 res://ballgame.tscn
 res://LoadingButton.gd
-res://main_gui.gd
+res://main_gui.tscn
