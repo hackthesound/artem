@@ -1,2 +1,9 @@
+res://dragging_project.tscn
+res://LoadingButton.gd
+res://world_border.gd
+res://dragging_project.gd
+res://world_border.tscn
+res://ballgame.tscn
 res://main_gui.tscn
-res://Zen Fishing.gd
+res://RigidBody2D.gd
+res://draggableball.tscn

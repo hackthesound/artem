@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://csa6mbwspgan5"]
+
+[ext_resource type="Script" path="res://world_border.gd" id="1_1gllx"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fbex8"]
+distance = 100000.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3dsv1"]
+normal = Vector2(1, 0)
+distance = 100000.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_11h25"]
+normal = Vector2(-1, 0)
+distance = -10000.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_63xnd"]
+normal = Vector2(0, 1)
+distance = -10000.0
+
+[node name="WorldBorder" type="StaticBody2D"]
+script = ExtResource("1_1gllx")
+
+[node name="Bottom" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_fbex8")
+disabled = true
+one_way_collision = true
+
+[node name="Left" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_3dsv1")
+disabled = true
+one_way_collision = true
+
+[node name="Right" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_11h25")
+disabled = true
+one_way_collision = true
+
+[node name="Top" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_63xnd")
+disabled = true
+one_way_collision = true

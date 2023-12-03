@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://p4lqx4nx51tg"]
+
+[ext_resource type="Script" path="res://RigidBody2D.gd" id="1_fly36"]
+[ext_resource type="Texture2D" uid="uid://cmexnffjbo58q" path="res://New Piskel-2.png" id="2_sugin"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_md6se"]
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dod1x"]
+radius = 47.01
+
+[node name="RigidBody2D" type="RigidBody2D"]
+position = Vector2(798, 337)
+input_pickable = true
+mass = 13.86
+physics_material_override = SubResource("PhysicsMaterial_md6se")
+freeze = true
+max_contacts_reported = 2
+contact_monitor = true
+script = ExtResource("1_fly36")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dod1x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.81334e-05, -2.81334e-05)
+scale = Vector2(0.0917968, 0.0917968)
+texture = ExtResource("2_sugin")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_shape_entered" from="." to="." method="_on_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="." to="." method="_on_mouse_shape_exited"]
