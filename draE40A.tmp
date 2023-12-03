@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=3 uid="uid://drqyr7hup6ys6"]
+
+[ext_resource type="Script" path="res://dragging_project.gd" id="1_ccu8o"]
+[ext_resource type="Texture2D" uid="uid://blhixfnyet0pm" path="res://pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg" id="1_yibcu"]
+[ext_resource type="Texture2D" uid="uid://cmexnffjbo58q" path="res://New Piskel-2.png" id="2_73i5d"]
+[ext_resource type="Script" path="res://RigidBody2D.gd" id="2_bvc7d"]
+[ext_resource type="PackedScene" uid="uid://csa6mbwspgan5" path="res://world_border.tscn" id="3_jesab"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_md6se"]
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dod1x"]
+radius = 47.01
+
+[node name="Dragging project" type="Node"]
+script = ExtResource("1_ccu8o")
+
+[node name="Gui" type="Control" parent="."]
+visibility_layer = 524288
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="Gui"]
+visibility_layer = 524288
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yibcu")
+expand_mode = 1
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(798, 337)
+input_pickable = true
+mass = 8.22
+physics_material_override = SubResource("PhysicsMaterial_md6se")
+freeze = true
+max_contacts_reported = 2
+contact_monitor = true
+script = ExtResource("2_bvc7d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CircleShape2D_dod1x")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(-2.81334e-05, -2.81334e-05)
+scale = Vector2(0.0917968, 0.0917968)
+texture = ExtResource("2_73i5d")
+
+[node name="WorldBorder" parent="." instance=ExtResource("3_jesab")]
+position = Vector2(616, 286)
+
+[connection signal="body_entered" from="RigidBody2D" to="RigidBody2D" method="_on_body_entered"]
+[connection signal="input_event" from="RigidBody2D" to="RigidBody2D" method="_on_input_event"]
+[connection signal="mouse_entered" from="RigidBody2D" to="RigidBody2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="RigidBody2D" to="RigidBody2D" method="_on_mouse_exited"]
+[connection signal="mouse_shape_entered" from="RigidBody2D" to="RigidBody2D" method="_on_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="RigidBody2D" to="RigidBody2D" method="_on_mouse_shape_exited"]

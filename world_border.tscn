@@ -23,14 +23,17 @@ script = ExtResource("1_1gllx")
 [node name="Bottom" type="CollisionShape2D" parent="."]
 shape = SubResource("WorldBoundaryShape2D_fbex8")
 disabled = true
+one_way_collision = true
 
 [node name="Left" type="CollisionShape2D" parent="."]
 shape = SubResource("WorldBoundaryShape2D_3dsv1")
 disabled = true
+one_way_collision = true
 
 [node name="Right" type="CollisionShape2D" parent="."]
 shape = SubResource("WorldBoundaryShape2D_11h25")
 disabled = true
+one_way_collision = true
 
 [node name="Top" type="CollisionShape2D" parent="."]
 shape = SubResource("WorldBoundaryShape2D_63xnd")
