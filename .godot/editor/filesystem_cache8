@@ -1,10 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701582246
-ballgame.tscn::PackedScene::6376870614701672463::1701567232::0::1::::<><>::uid://blhixfnyet0pm::::res://pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg
-LoadingButton.gd::GDScript::-1::1701558344::0::1::::<>Button<>::
-main_gui.gd::GDScript::-1::1701557853::0::1::::<>Control<>::
-main_gui.tscn::PackedScene::1450297638813776922::1701566578::0::1::::<><>::res://LoadingButton.gd
-node_3d.tscn::PackedScene::7743402639524755136::1701537302::0::1::::<><>::
-pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg::CompressedTexture2D::3173475700987599878::1701556178::1701556178::1::::<><>::
-rectangular-png-512x512-pixel-512.png::CompressedTexture2D::2013247025839235035::1701556162::1701548294::1::::<><>::
+::res://::1701585587
+ballgame.tscn::PackedScene::6376870614701672463::1701584207::0::1::::<><>::uid://blhixfnyet0pm::::res://pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg
+LoadingButton.gd::GDScript::-1::1701584137::0::1::::<>Button<>::
+main_gui.gd::GDScript::-1::1701583688::0::1::::<>Control<>::
+main_gui.tscn::PackedScene::1450297638813776922::1701584207::0::1::::<><>::res://LoadingButton.gd
+New Piskel-1.png::CompressedTexture2D::8102532851625226692::1701585505::1701585505::1::::<><>::
+New Piskel-2.png::CompressedTexture2D::5624784978964836170::1701585587::1701585588::1::::<><>::
+node_3d.tscn::PackedScene::7743402639524755136::1701583688::0::1::::<><>::
+pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg::CompressedTexture2D::3173475700987599878::1701583688::1701583688::1::::<><>::
+rectangular-png-512x512-pixel-512.png::CompressedTexture2D::2013247025839235035::1701583688::1701583688::1::::<><>::
+dragging_project.tscn::PackedScene::8386991695804424331::1701585556::0::1::::<><>::uid://blhixfnyet0pm::::res://pixel-art-lo-fi-city-mvqzjym6ie17firw.jpg<>uid://dno6sdkno4lya::::res://New Piskel-1.png
 ::res://Ball game/::1701553105

@@ -78,3 +78,9 @@ layout_mode = 2
 text = "Calming Ball Game"
 script = ExtResource("1_4qkqc")
 sceneToLoad = "ballgame.tscn"
+
+[node name="Funny Dragging" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Funny Dragging"
+script = ExtResource("1_4qkqc")
+sceneToLoad = "dragging_project.tscn"

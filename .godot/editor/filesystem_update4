@@ -1,3 +1,9 @@
-res://ballgame.tscn
 res://LoadingButton.gd
 res://main_gui.tscn
+res://ballgame.tscn
+res://dragging_project.tscn
+res://world_viewport.tscn
+res://world_viewport.gd
+res://world_border.tscn
+res://world_border.gd
+res://RigidBody2D.gd
